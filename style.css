@@ -1,0 +1,25 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+
+    background-color: #ffdd00;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.wrapper {
+    text-shadow: rgba(120,20,0,.2) 0px 3px 4px;
+}
+
+article {
+        margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        margin: 20px;
+    }
+
+}
