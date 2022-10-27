@@ -1,0 +1,10 @@
+<nav class="main-nav">
+    {% if page.url != "/" %}
+        <a href="/" class="text--black"><span class="arrow">←</span>home</a>
+    {% endif %}
+    {% for navigation_item in site.data.navigation.navigation_items %}
+        <a href="{{ site.baseurl | append: navigation_item.path }}" class="text--black">
+            {{ navigation_item.title }}
+        </a>
+    {% endfor %}
+</nav>

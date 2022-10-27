@@ -1,5 +1,5 @@
 ---
-layout: subpage.njk
+layout: layouts/subpage.njk
 title: Code and Coffee Code of Conduct
 ---
 
