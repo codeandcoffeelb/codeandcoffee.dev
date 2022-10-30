@@ -9,6 +9,11 @@ body {
     background-position: center center;
 }
 
+html, body {
+    height: 100%;
+    
+}
+
 .wrapper {
     text-shadow: rgba(120,20,0,.2) 0px 3px 4px;
 }
