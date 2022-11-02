@@ -1,7 +1,7 @@
 ---
 title:  "James Hall"
 date:   2015-09-30 22:33:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 Hello! 

@@ -1,7 +1,7 @@
 ---
 title:  "Michael Jenkins"
 date:   2020-10-07 17:36:23
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:  "Write your own scripting language"
 date:   2016-02-26 00:00:00
-category: challenge
+tags: challenge
 layout: layouts/challenge.njk
 permalink: /challenges/write-a-scripting-language/index.html
 ---

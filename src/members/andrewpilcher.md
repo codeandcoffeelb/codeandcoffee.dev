@@ -1,7 +1,7 @@
 ---
 title:  "Andrew Pilcher"
 date:   2015-10-03 10:18:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

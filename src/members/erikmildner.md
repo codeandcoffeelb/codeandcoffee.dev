@@ -1,7 +1,7 @@
 ---
 title:  "Erik Mildner"
 date:   2015-10-02 10:04:16
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

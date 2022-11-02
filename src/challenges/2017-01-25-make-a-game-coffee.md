@@ -1,7 +1,7 @@
 ---
 title:  "Make a game about coffee"
 date:   2017-01-25 00:00:00
-category: challenge
+tags: challenge
 layout: layouts/challenge.njk
 permalink: /challenges/make-a-game-coffee/index.html
 ---

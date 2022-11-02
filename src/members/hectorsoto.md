@@ -1,7 +1,7 @@
 ---
 title:  "Hector Soto"
 date:   2015-10-13 20:45:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 #Hector A. Soto#

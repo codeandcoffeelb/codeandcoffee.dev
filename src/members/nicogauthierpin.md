@@ -1,7 +1,7 @@
 ---
 title:  "Nico Gauthier-Pin"
 date:   2016-05-01 13:00:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

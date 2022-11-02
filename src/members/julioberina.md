@@ -1,7 +1,7 @@
 ---
 title:  "Julio Berina"
 date:   2016-06-18 6:03:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

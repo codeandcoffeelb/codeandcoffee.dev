@@ -1,7 +1,7 @@
 ---
 title:  "Fred Garbutt"
 date:   2015-10-02 08:50:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 <style>

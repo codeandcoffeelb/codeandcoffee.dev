@@ -1,7 +1,7 @@
 ---
 title:  "Aaron Turner"
 date:   2016-02-04 02:11:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

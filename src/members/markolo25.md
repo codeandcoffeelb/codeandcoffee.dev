@@ -1,7 +1,7 @@
 ---
 title:  "Mark Mendoza"
 date:   2016-04-30 13:18:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

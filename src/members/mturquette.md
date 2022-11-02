@@ -1,7 +1,7 @@
 ---
 title:  "Mike Turquette"
 date:   2016-03-12 13:00:00
-category: member
+tags: member
 layout: layouts/member.njk
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:  "Green Squares"
 date:   2015-09-05 10:00:00
-category: challenge
+tags: challenge
 layout: layouts/challenge.njk
 permalink: /challenges/greensquares/index.html
 ---
