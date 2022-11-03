@@ -2,6 +2,7 @@
 title:  "Ch-ch-ch-ch-changes..."
 date:   2015-09-29 10:18:00
 description: Or where that James went, and who this Roger is...
+tags: news
 ---
 
 For the last year or so, James Hall devoted his Saturdays to bringing together a diverse group of hackers from in and around Long Beach in a friendly, casual environment. Friends were made, fun was had, code was written, and bellies filled.
