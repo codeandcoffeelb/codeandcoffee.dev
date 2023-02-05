@@ -1,0 +1,27 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const { title } = Astro.props;
+import { getCollection, getEntryBySlug } from "astro:content";
+
+export async function getStaticPaths() {
+    const allMembers = await getCollection("challenges");
+    const paths = allMembers.map((member) => ({
+        params: { slug: member.slug },
+    }));
+    return paths;
+}
+
+const { slug } = Astro.params;
+const member = await getEntryBySlug('challenges', slug || '');
+
+---
+
+<Layout title={member?.data.title}>
+    { member && (
+            <div class="card-content">
+                <h2 class="title is-2">{member.data.title}</h2>
+                {member.body}
+            </div>)
+    }
+</Layout>

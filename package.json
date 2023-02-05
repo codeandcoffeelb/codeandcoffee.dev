@@ -1,27 +1,16 @@
 {
-  "name": "codeandcoffee.dev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --watch --serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codeandcoffeelb/codeandcoffee.dev.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codeandcoffeelb/codeandcoffee.dev/issues"
-  },
-  "homepage": "https://github.com/codeandcoffeelb/codeandcoffee.dev#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.16"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-webc": "^0.5.1"
+    "astro": "^2.0.6"
   }
 }
