@@ -1,7 +1,7 @@
 ---
 title: About Code and Coffee, Long Beach
 permalink: about/
-layout: ../layouts/Layout.astro
+layout: ../layouts/SubPage.astro
 ---
 
 # code + coffee / long beach

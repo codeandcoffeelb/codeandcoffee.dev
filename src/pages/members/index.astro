@@ -1,20 +1,20 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import SubPage from "../../layouts/SubPage.astro";
 
 const { title } = Astro.props;
 import { getCollection } from "astro:content";
-const allMembers = await getCollection("members");
+const pages = await getCollection("members");
 ---
 
-<Layout title={title}>
+<SubPage title={title}>
     <h1 class="title is-1">Members</h1>
     <ul>
         {
-            allMembers.map((member) => (
+            pages.map((page) => (
                 <li>
-                    <a href={`/members/${member.slug}`}>{member.data.title}</a>
+                    <a href={`/members/${page.slug}`}>{page.data.title}</a>
                 </li>
             ))
         }
     </ul>
-</Layout>
+</SubPage>

@@ -2,7 +2,7 @@
 title:  "Erik Mildner"
 date:   2015-10-02 10:04:16
 tags: member
-layout: layouts/member.njk
+
 ---
 
 ### Hi I'm Erik.  I'm a web developer and I create alot of these:

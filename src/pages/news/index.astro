@@ -1,12 +1,12 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import SubPage from "../../layouts/SubPage.astro";
 
 const { title } = Astro.props;
 import { getCollection } from "astro:content";
 const allMembers = await getCollection("news");
 ---
 
-<Layout title={title}>
+<SubPage title={title}>
     <h1 class="title is-1">Challenges</h1>
     <ul>
         {
@@ -17,4 +17,4 @@ const allMembers = await getCollection("news");
             ))
         }
     </ul>
-</Layout>
+</SubPage>

@@ -2,7 +2,7 @@
 title:  "Julio Berina"
 date:   2016-06-18 6:03:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 I first cut my teeth on programming during the days of Myspace. I learned HTML and CSS so I can make better layouts for my profile.  Along the way,

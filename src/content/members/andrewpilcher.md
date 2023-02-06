@@ -2,7 +2,7 @@
 title:  "Andrew Pilcher"
 date:   2015-10-03 10:18:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <img style="float: right; margin-left: 20px; border-radius: 50%;" src="https://lh3.googleusercontent.com/-GhOvw34xQls/AAAAAAAAAAI/AAAAAAAABdI/rY_p67M4bD8/s120-c/photo.jpg">

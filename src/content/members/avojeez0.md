@@ -2,7 +2,7 @@
 title:  "Fred Garbutt"
 date:   2015-10-02 08:50:00
 tags: member
-layout: layouts/member.njk
+
 ---
 <style>
 .post header {

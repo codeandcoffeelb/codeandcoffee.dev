@@ -2,7 +2,7 @@
 title:  "Ashley Bradford"
 date:   2016-4-15 17:27:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <style>

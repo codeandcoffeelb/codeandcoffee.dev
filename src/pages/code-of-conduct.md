@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Layout.astro
+layout: ../layouts/SubPage.astro
 title: Code and Coffee Code of Conduct
 ---
 

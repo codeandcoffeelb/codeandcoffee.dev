@@ -2,7 +2,7 @@
 title:  "Alejandra Garbutt"
 date:   2015-10-03 10:18:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <img style="float: left; width: 40%; margin-right: 40px;" src="http://s28.postimg.org/vnidbd08d/profile_pic.png">

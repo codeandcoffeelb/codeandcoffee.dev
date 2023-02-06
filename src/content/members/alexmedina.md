@@ -2,7 +2,7 @@
 title:  "Alex Medina"
 date:   2015-10-01 08:50:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 Hmmm... I have a cat.

@@ -2,7 +2,7 @@
 title:  "David Nuon"
 date:   2015-10-15 00:00:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 During the day, David Nuon is a developer that dishes out Javascript, Python and PHP. At night? He writes C and Haskell to dissect old Game Boy roms and for enhancing his enjoyment of tabletop games. David enjoys retro-computing and esoteric programming languages. If it's old or no one has heard of it, he's probably going to be in to it.

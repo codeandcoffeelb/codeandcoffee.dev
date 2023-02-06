@@ -2,7 +2,7 @@
 title:  "Michael Jenkins"
 date:   2020-10-07 17:36:23
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <center><img src="http://managedkaos.com/wp-content/uploads/2016/06/headshot.jpg" alt="Michael P. Jenkins" style="width: 300px;"/></center>

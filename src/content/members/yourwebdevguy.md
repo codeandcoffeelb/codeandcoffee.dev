@@ -2,7 +2,7 @@
 title:  "Abraham Cuenca"
 date:   2018-02-15 20:00:00
 tags: member
-layout: layouts/member.njk
+
 ---
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');

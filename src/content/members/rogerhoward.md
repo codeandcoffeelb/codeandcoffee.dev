@@ -2,7 +2,7 @@
 title:  "Roger Howard"
 date:   2015-09-29 10:18:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <img style="float: right; width: 40%; margin-left: 20px;" src="/assets/images/rogerhoward_portrait.jpg">

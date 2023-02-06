@@ -2,7 +2,7 @@
 title:  "Aaron Turner"
 date:   2016-02-04 02:11:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <img style="margin-left:auto;margin-right:auto;" src="https://avatars0.githubusercontent.com/u/1448289?v=3&s=460">

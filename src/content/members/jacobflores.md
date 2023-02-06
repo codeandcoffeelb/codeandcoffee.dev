@@ -2,7 +2,7 @@
 title:  “Jacob Ethan Flores“
 date:   2016-05-07 04:20:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 #Hello World

@@ -2,7 +2,7 @@
 title:  "Mike Turquette"
 date:   2016-03-12 13:00:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 <img style="float: right; width: 40%; margin-left: 20px;" src="/assets/images/mturquette.png">

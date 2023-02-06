@@ -3,7 +3,7 @@ title:  "Kenneth Chambers"
 date:   2015-10-01 10:03:00
 description: I love eating chicken sandwhiches!
 tags: member
-layout: layouts/member.njk
+
 ---
 
 ### Delicious Chicken Sandwhiches!

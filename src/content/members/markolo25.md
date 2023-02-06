@@ -2,7 +2,7 @@
 title:  "Mark Mendoza"
 date:   2016-04-30 13:18:00
 tags: member
-layout: layouts/member.njk
+
 ---
 
 #Who I am

@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import SubPage from "../../layouts/SubPage.astro";
 
 const { title } = Astro.props;
 import { getCollection, getEntryBySlug } from "astro:content";
@@ -12,16 +12,17 @@ export async function getStaticPaths() {
     return paths;
 }
 
-const { slug } = Astro.params;
-const member = await getEntryBySlug('members', slug || '');
+const { slug } = Astro.params as { slug: string };
+const member = await getEntryBySlug('members', slug);
+const { Content, headings } = await member?.render()
 
 ---
 
-<Layout title={member?.data.title}>
+<SubPage title={member?.data.title}>
     { member && (
             <div class="card-content">
                 <h2 class="title is-2">{member.data.title}</h2>
-                {member.body}
+                <Content />
             </div>)
     }
-</Layout>
+</SubPage>
