@@ -1,5 +1,5 @@
 ---
-layout: subpage.njk
+layout: ../../templates/subpage.astro
 title: Code and Coffee Code of Conduct
 ---
 
