@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: ../../templates/base.astro
 title: Code and Coffee
 ---
 

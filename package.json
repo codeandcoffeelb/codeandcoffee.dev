@@ -1,23 +1,17 @@
 {
   "name": "codeandcoffee.dev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codeandcoffeelb/codeandcoffee.dev.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codeandcoffeelb/codeandcoffee.dev/issues"
-  },
-  "homepage": "https://github.com/codeandcoffeelb/codeandcoffee.dev#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+  "dependencies": {
+    "astro": "^4.2.8",
+    "@astrojs/check": "^0.4.1",
+    "typescript": "^5.3.3"
   }
 }
