@@ -4,33 +4,51 @@ import Brand from "../components/Brand.astro";
 ---
 
 <nav
-  class="navbar is-transparent center"
+  class="navbar"
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="container">
-    <div class="navbar-brand">
-      { false  ? <Brand /> : '' } 
-      <a
-        role="button"
-        class="navbar-burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start"></div>
-      <div class="navbar-end">
-        <a class="navbar-item" href="/about"> about</a>
-        <a class="navbar-item" href="/news"> news</a>
-        <a class="navbar-item" href="/code-of-conduct"> conduct</a>
-      </div>
-    </div>
+  <div>
+    Logo
   </div>
+  <ul>
+    <li><a href="/news">news</a></li>
+    <li><a href="/about">about</a></li>
+    <li><a href="/code-of-conduct">conduct</a></li>
+  </ul>
 </nav>
+
+<style>
+  .navbar {
+    min-height: 3ch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 1ch;
+
+    padding:0;
+    margin: 0;
+  }
+
+  .navbar ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    padding: 1ch 2ch;
+  }
+  
+  .navbar ul li:hover a {
+    background: #222;
+    color: #fff;
+  }
+</style>

@@ -1,0 +1,18 @@
+---
+---
+<div class="two-columns">
+    <slot name="left" />
+    <slot name="right" />
+</div>
+
+<style>
+    .two-columns {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left, .right {
+        display: block;
+    }
+</style>
