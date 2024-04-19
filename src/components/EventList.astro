@@ -1,0 +1,20 @@
+---
+
+const events = [1];
+import EventListItem from './EventListItem.astro';
+---
+<div class="event-list">
+    <h2>Upcoming Meetups</h2>
+    { events.map(event => (
+        <EventListItem />
+    ))
+    }
+</div>
+
+<style>
+    .event-list {
+        display: flex;
+        gap: 2ch;
+        flex-direction: column;
+    }
+</style>

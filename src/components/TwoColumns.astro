@@ -1,18 +1,29 @@
 ---
 ---
 <div class="two-columns">
-    <slot name="left" />
-    <slot name="right" />
+    <div class="left">
+        <slot name="left" />
+    </div>
+    <div class="right">
+        <slot name="right" />
+    </div>
 </div>
 
-<style>
+<style>    
     .two-columns {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10ch;
     }
 
-    .left, .right {
-        display: block;
+    @media screen and (max-width: 999px) {
+        .two-columns {
+            grid-template-columns: 1fr;
+            gap: 1ch;
+        }
+        .left, .right {
+            padding: 2ch;
+        }
     }
 </style>

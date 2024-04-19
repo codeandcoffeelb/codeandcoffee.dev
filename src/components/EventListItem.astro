@@ -1,0 +1,50 @@
+---
+
+---
+
+<div class="event-list-item">
+    <div class="date-box">
+        <div class="month">April</div>
+        <div class="day">13</div>
+    </div>
+    <div class="event-info">
+        <h3>Code And Coffee Online!</h3>
+        <p>Event Description</p>
+    </div>
+</div>
+
+<style>
+    .date-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #333;
+        padding: 1ch;
+    }
+
+    .date-box .month {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .date-box .day {
+        font-size: 2em;
+        font-weight: normal;
+        font-weight: 300;
+    }
+
+    .event-list-item {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1ch;
+    }
+
+    .event-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+</style>

@@ -1,0 +1,17 @@
+---
+const news = [1,2];
+---
+
+<div class="news-list">
+    <h2>Announcements</h2>
+    {
+        news.map((item, index) => {
+            return (
+                <div class="news-item" key={index}>
+                    <h3>News Item</h3>
+                    <a href="javascript:;">news {item}</a>
+                </div>
+            )
+        })
+    }
+</div>

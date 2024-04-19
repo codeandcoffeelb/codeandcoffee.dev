@@ -1,30 +1,25 @@
 ---
-import HomePage from '../layouts/HomePage.astro'
-import HeroButton from '../components/HeroButton.astro'
-import HeroButtonHolder from '../components/HeroButtonHolder.astro' 
+import HomePage from "../layouts/HomePage.astro";
+import HeroButton from "../components/HeroButton.astro";
+import HeroButtonHolder from "../components/HeroButtonHolder.astro";
 ---
 
 <HomePage title="Code and Coffee">
-    <h1 class="logo">code+coffee</h1> 
-    
+    <div class="logo-holder" style="padding:3ch;  text-align: center;">
+        <img src="/logo.svg" style="max-width: 70%;;" alt="code+coffee logo" />
+    </div>
+
     <p>
-        We're an online community
-        bringing together programmers of all ages, skills 
-        and experiences in a casual environment to share, 
-        collaborate, and hack together.    
+        We're an online community bringing together programmers of all ages,
+        skills and experiences in a casual environment to share, collaborate,
+        and hack together.
     </p>
 
     <HeroButtonHolder>
-        <HeroButton type="meetup">
-            RSVP on Meetup.com
-        </HeroButton>
-                
-        <HeroButton type="discord">
-            Join us on Discord
-        </HeroButton>
+        <HeroButton type="meetup"> RSVP on Meetup.com </HeroButton>
+
+        <HeroButton type="discord"> Join us on Discord </HeroButton>
     </HeroButtonHolder>
 </HomePage>
 
-<style>
-
-</style>
+<style></style>
