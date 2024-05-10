@@ -8,12 +8,13 @@ import Brand from "../components/Brand.astro";
   role="navigation"
   aria-label="main navigation"
 >
-  <div>
+  <!-- <div>
     <h1 class="logo">
       <a href="/">code+coffee</a>
     </h1>
-  </div>
+  </div> -->
   <ul>
+    <li><a href="/">home</a></li>
     <li><a href="/news">news</a></li>
     <li><a href="/about">about</a></li>
     <li><a href="/code-of-conduct">conduct</a></li>
@@ -23,9 +24,12 @@ import Brand from "../components/Brand.astro";
 <style>
   .navbar {
     min-height: 3ch;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 2ch 0;
   }
 
   .navbar ul {

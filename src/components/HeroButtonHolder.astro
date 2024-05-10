@@ -8,10 +8,16 @@
 <style>
     .big-button-holder {
         display: flex;
-        flex-direction: column;
-        height: 75px;
-        gap: 10px;
+        flex-direction: row;
+        gap: 1ch;
 
         justify-content: center;
+    }
+
+
+    @media (min-width: 468px) {
+        .big-button-holder  {
+            margin: 2ch 1ch;
+        }
     }
 </style>
