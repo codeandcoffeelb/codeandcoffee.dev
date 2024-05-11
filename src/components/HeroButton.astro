@@ -1,17 +1,19 @@
 ---
 type ButtonKind = "meetup" | "discord";
 
-const buttonType: ButtonKind = Astro.props.type;
-const className = 'big-button' + (' ' + (buttonType || ''));
 
 export type Props = {
     type: ButtonKind
+    url: string
 };
+const {type: buttonType, url} = Astro.props as Props;
+
+const className = 'big-button' + (' ' + (buttonType || ''));
 ---
 
-<button class={className}>
+<a href={url} class={className} target="_blank">
     <slot />
-</button>
+</a>
 
 <style>
     .big-button {
@@ -28,17 +30,26 @@ export type Props = {
 
         cursor: pointer;
         font-family: inherit;
+
+        text-align: center;
+
+        text-decoration: none;
     }
 
-    .big-button:hover {
-        background: #777;
-    }
 
     .meetup {
         background: rgb(180, 41, 41);
+        
+        &:hover {
+            background: rgb(147, 29, 29);
+        }
     }
 
     .discord {
         background: rgb(97, 39, 169);
+
+        &:hover {
+            background: rgb(83, 27, 166);
+        }
     }
 </style>

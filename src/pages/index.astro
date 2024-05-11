@@ -3,6 +3,8 @@ import HomePage from "../layouts/HomePage.astro";
 import HeroButton from "../components/HeroButton.astro";
 import HeroButtonHolder from "../components/HeroButtonHolder.astro";
 import HeroText from '../components/HeroText.astro';
+
+import { DISCORD_INVITE_LINK, MEETUP_PAGE_LINK } from "../constants";
 ---
 
 <HomePage title="Code and Coffee">
@@ -12,21 +14,18 @@ import HeroText from '../components/HeroText.astro';
     
     <img src="/logotype.svg" style="max-width: 100%;" alt="code+coffee logo" />
     <HeroButtonHolder>
-        <HeroButton type="discord"> Discord </HeroButton>
-        <HeroButton type="meetup"> Meetup.com </HeroButton>
+        <HeroButton type="discord" url={DISCORD_INVITE_LINK}> Discord </HeroButton>
+        <HeroButton type="meetup" url={MEETUP_PAGE_LINK}> Meetup.com </HeroButton>
     </HeroButtonHolder>
     <HeroText>
             We're a community bringing together programmers a casual environment to share, collaborate,
             and hack together.
             <p>
-                Weekly online meetings Saturdays 10:30am on Discord.
+                Weekly online meetings Saturdays 10:30am PST on <a href={DISCORD_INVITE_LINK}>Discord</a>
             </p>
 
             <p>
-                In-person meetups at least monlthy, see Meetup.com for details.
+                In-person meetups at least once a month around Long Beach, <a href={MEETUP_PAGE_LINK}>Meetup.com</a>
             </p>
     </HeroText>
-
 </HomePage>
-
-<style></style>
