@@ -1,9 +1,5 @@
 ---
 import Layout from './Layout.astro';
-import HomeHero from '../components/HomeHero.astro';
-import TwoColumns from '../components/TwoColumns.astro';
-import EventList from '../components/EventList.astro'
-import EventDescription from '../components/EventDescription.astro';
 
 export interface Props {
 	title: string;
@@ -20,7 +16,7 @@ const { title } = Astro.props;
 
 <style lang="scss">
 	.wrapper {
-		max-width: 600px;
+		max-width: 800px;
 		margin: 0 auto;
 	}
 </style>
