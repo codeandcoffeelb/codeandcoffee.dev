@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContentWrapper from '../../components/ContentWrapper.astro';
+
+import { getCollection } from "astro:content";
+
+const news = await getCollection("news");
+---
+<Layout title="News">
+    <ContentWrapper>
+        <h1>News</h1>
+        <p>
+            Latest Code and Coffee happenings.
+        </p>
+        <ul class="news-item-list">
+        {news.map(({ data }) => (
+            <li class="news-item">
+                <a href={`/news/${data.slug}`}>
+                    <h3>{data.title}</h3>
+                <p>{data.date}</p>
+                </a>
+            </li>
+        ))}
+        </ul>
+    </ContentWrapper>
+</Layout>
+
+<style lang="scss">
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .news-item {
+        margin-bottom: 1rem;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            h3 {
+                margin: 0;
+                font-size: 2.3rem;
+            }
+        }
+    }
+</style>

@@ -1,17 +1,40 @@
 ---
-const news = [1,2];
+const { news } = Astro.props;
 ---
 
 <div class="news-list">
-    <h2>Announcements</h2>
+    <h2>News</h2>
     {
         news.map((item, index) => {
             return (
-                <div class="news-item" key={index}>
-                    <h3>News Item</h3>
-                    <a href="javascript:;">news {item}</a>
+                <div class="news-item">
+                    <h3>
+                        <a href="javascript:;">July Events</a>
+                    </h3>
+                    <span>
+                        July 4, 2024
+                    </span>
                 </div>
             )
         })
     }
 </div>
+
+<style>
+    .news-list {
+        line-height: 1.7em;
+        font-size: 1.3em;
+        margin: 1ch 0;
+    }
+    .news-item {
+        margin-bottom: 1em;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: inherit;
+        }
+    }
+</style>

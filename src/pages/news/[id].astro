@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from "astro";
+import getCollection from "astro:content";
+
+const news = await getCollection("news");
+console.log(news)
+
+ export const getStaticPaths = (() => {   
+    return [];
+}) satisfies GetStaticPaths;
+
+---
