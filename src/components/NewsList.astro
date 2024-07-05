@@ -5,14 +5,19 @@ const { news } = Astro.props;
 <div class="news-list">
     <h2>News</h2>
     {
-        news.map((item, index) => {
+        news.map((item) => {
+            const {
+                data, 
+                slug
+            } = item;
+
             return (
                 <div class="news-item">
                     <h3>
-                        <a href="javascript:;">July Events</a>
+                        <a href=`/news/${ slug }`>{ data.title }</a>
                     </h3>
                     <span>
-                        July 4, 2024
+                        { data.date }
                     </span>
                 </div>
             )

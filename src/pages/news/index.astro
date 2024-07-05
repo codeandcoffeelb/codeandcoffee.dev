@@ -13,9 +13,9 @@ const news = await getCollection("news");
             Latest Code and Coffee happenings.
         </p>
         <ul class="news-item-list">
-        {news.map(({ data }) => (
+        {news.map(({ slug, data }) => (
             <li class="news-item">
-                <a href={`/news/${data.slug}`}>
+                <a href={`/news/${slug}`}>
                     <h3>{data.title}</h3>
                 <p>{data.date}</p>
                 </a>

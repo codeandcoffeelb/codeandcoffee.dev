@@ -1,12 +1,27 @@
 ---
-import type { GetStaticPaths } from "astro";
-import getCollection from "astro:content";
+import SubPage from "../../layouts/SubPage.astro";
+import { getCollection } from "astro:content";
 
-const news = await getCollection("news");
-console.log(news)
+const { id } = Astro.params;
 
- export const getStaticPaths = (() => {   
-    return [];
-}) satisfies GetStaticPaths;
+export async function getStaticPaths() {
+    const news = await getCollection("news");
+    return news.map((item) => {
+        return {
+            params: {
+                id: item.slug
+            }
+        }
+    });
+}
 
+const posts = await getCollection("news");
+const post = posts.find((item) => item.slug === id);
 ---
+
+<SubPage title={ post?.data.title || "News" }>
+    <h1>
+        { post?.data?.title }
+    </h1>
+    { post?.body }
+</SubPage>
