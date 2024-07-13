@@ -13,8 +13,8 @@
     /* Color Variables */
     --color-text: #222;
     --color-background: none;
-    --color-heading: #444;
-    --color-link: #007bff;
+    --color-heading: #222;
+    --color-link: #333;
     --color-link-hover: #0056b3;
     --color-blockquote: #eee;
     --color-code-bg: #f8f8f8;
@@ -87,7 +87,6 @@
   
     a {
       color: var(--color-link);
-      text-decoration: none;
   
       &:hover,
       &:focus {
