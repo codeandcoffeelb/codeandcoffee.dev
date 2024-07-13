@@ -1,5 +1,10 @@
 ---
 const { news } = Astro.props;
+const dateOptions: object = {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+};
 ---
 
 <div class="news-list">
@@ -10,6 +15,7 @@ const { news } = Astro.props;
                 data, 
                 slug
             } = item;
+            const formattedPublishDate = new Date(data.date).toLocaleDateString("en-US", dateOptions);
 
             return (
                 <div class="news-item">
@@ -17,7 +23,7 @@ const { news } = Astro.props;
                         <a href=`/news/${ slug }`>{ data.title }</a>
                     </h3>
                     <span>
-                        { data.date }
+                        { formattedPublishDate }
                     </span>
                 </div>
             )

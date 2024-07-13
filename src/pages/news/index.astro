@@ -5,6 +5,14 @@ import ContentWrapper from '../../components/ContentWrapper.astro';
 import { getCollection } from "astro:content";
 
 const news = await getCollection("news");
+
+const dateOptions: object = {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+};
+
+
 ---
 <Layout title="News">
     <ContentWrapper>
@@ -13,14 +21,17 @@ const news = await getCollection("news");
             Latest Code and Coffee happenings.
         </p>
         <ul class="news-item-list">
-        {news.map(({ slug, data }) => (
-            <li class="news-item">
+        {news.map(({ slug, data }) => {
+            const formattedPublishDate = new Date(data.date).toLocaleDateString("en-US", dateOptions);
+
+            
+            return (<li class="news-item">
                 <a href={`/news/${slug}`}>
                     <h3>{data.title}</h3>
-                <p>{data.date}</p>
+                <p>{formattedPublishDate}</p>
                 </a>
-            </li>
-        ))}
+            </li>)
+        })}
         </ul>
     </ContentWrapper>
 </Layout>
