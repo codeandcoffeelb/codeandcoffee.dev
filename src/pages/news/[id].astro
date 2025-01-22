@@ -1,0 +1,28 @@
+---
+import SubPage from "../../layouts/SubPage.astro";
+import { getCollection } from "astro:content";
+
+const { id } = Astro.params;
+
+export async function getStaticPaths() {
+    const news = await getCollection("news");
+    return news.map((item) => {
+        return {
+            params: {
+                id: item.slug
+            }
+        }
+    });
+}
+
+const posts = await getCollection("news");
+const post = posts.find((item) => item.slug === id);
+const { Content } = await post?.render();
+---
+
+<SubPage title={ post?.data.title || "News" }>
+    <h1>
+        { post?.data?.title }
+    </h1>
+    <Content />
+</SubPage>

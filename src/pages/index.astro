@@ -3,29 +3,40 @@ import HomePage from "../layouts/HomePage.astro";
 import HeroButton from "../components/HeroButton.astro";
 import HeroButtonHolder from "../components/HeroButtonHolder.astro";
 import HeroText from '../components/HeroText.astro';
+import NewsList from "../components/NewsList.astro";
+
+import { getCollection } from "astro:content";
 
 import { DISCORD_INVITE_LINK, MEETUP_PAGE_LINK } from "../constants";
+import TwoColumns from "../components/TwoColumns.astro";
+
+const news = await getCollection("news");
 ---
 
 <HomePage title="Code and Coffee">
     <div class="logo-holder" style="padding:3ch;  text-align: center;">
-        <img src="/logo.svg" style="max-width: 50%;" alt="code+coffee logo" />
+        <img src="/logo.svg" style="max-width: 30%;" alt="code+coffee logo" />
     </div>
     
-    <img src="/logotype.svg" style="max-width: 100%;" alt="code+coffee logo" />
+    <img src="/logotype.svg" style="max-width: 80%; margin: 0 auto; display: block; margin-bottom: 2rem;;" alt="code+coffee logo" />
     <HeroButtonHolder>
         <HeroButton type="discord" url={DISCORD_INVITE_LINK}>Join us on Discord </HeroButton>
         <HeroButton type="meetup" url={MEETUP_PAGE_LINK}>RSVP on Meetup.com </HeroButton>
     </HeroButtonHolder>
-    <HeroText>
-            We're a community bringing programmers in a casual environment to share, collaborate,
-            and hack together.
-            <p>
-                Weekly online meetings Saturdays 10:30am PST on <a href={DISCORD_INVITE_LINK}>Discord</a>.
-            </p>
 
-            <p>
-                In-person meetups at least once a month around Long Beach, see <a href={MEETUP_PAGE_LINK}>Meetup.com</a> for details.
-            </p>
-    </HeroText>
+    <TwoColumns>
+        <NewsList news={news} slot="right"/>
+        <HeroText slot="left">
+            <h2>About Us</h2>
+                We're a community bringing programmers in a casual environment to share, collaborate,
+                and hack together.
+                <p>
+                    Weekly online meetings Saturdays 10:30am PST on <a href={DISCORD_INVITE_LINK}>Discord</a>.
+                </p>
+    
+                <p>
+                    In-person meetups at least once a month around Long Beach, see <a href={MEETUP_PAGE_LINK}>Meetup.com</a> for details.
+                </p>
+        </HeroText>
+    </TwoColumns>
 </HomePage>
