@@ -10,7 +10,9 @@ import { getCollection } from "astro:content";
 import { DISCORD_INVITE_LINK, MEETUP_PAGE_LINK } from "../constants";
 import TwoColumns from "../components/TwoColumns.astro";
 
-const news = await getCollection("news");
+const news = (await getCollection("news")).sort((a, b) => {
+    return Date.parse(b.data.date) - Date.parse(a.data.date);
+});
 ---
 
 <HomePage title="Code and Coffee">
